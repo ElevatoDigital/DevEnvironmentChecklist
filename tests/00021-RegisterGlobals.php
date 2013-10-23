@@ -15,9 +15,9 @@ class RegisterGlobalsTest extends BaseTest
         $activated = ini_get('register_globals');
 
         if ($activated) {
-            $result->setFound('The allow_url_fopen option is on.');
+            $result->setFound('The register_globals option is on.');
         } else {
-            $result->setFound('The allow_url_fopen option is off.');
+            $result->setFound('The register_globals option is off.');
         }
 
         return $result->setByBoolean(!$activated);
