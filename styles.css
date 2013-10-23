@@ -1,0 +1,43 @@
+html,
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.header p {
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+li h2 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.result_passed h2 {
+    color: green;
+}
+
+.result_failed h2 {
+    color: red;
+}
+
+.result_failed {
+    background: #fcc;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+li div span {
+    color: #666;
+}
