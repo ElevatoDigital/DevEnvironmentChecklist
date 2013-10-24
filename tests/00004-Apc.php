@@ -14,7 +14,7 @@ class ApcTest extends BaseTest
         $result = new TestResult($this);
 
         $apc  = extension_loaded('apc');
-        $acpu = extension_loaded('apcu');
+        $apcu = extension_loaded('apcu');
 
         if ($apc) {
             $result->setFound('apc is installed.');
@@ -24,7 +24,6 @@ class ApcTest extends BaseTest
             $result->setFound('Neither apc or apcu is installed.');
         }
 
-        return $result
-            ->setByBoolean($apc || $apcu);
+        return $result->setByBoolean($apc || $apcu);
     }
 }
