@@ -6,7 +6,7 @@ class PhpVersionTest extends BaseTest
     {
         $this
             ->setTitle('PHP Version')
-            ->setExpected('Your PHP installation should be version 5.3 or later.');
+            ->setExpected('Your PHP installation should be version 7.0 or later.');
     }
 
     public function run()
@@ -15,6 +15,6 @@ class PhpVersionTest extends BaseTest
 
         return $result
             ->setFound('You are running PHP version ' . PHP_VERSION . '.')
-            ->setByBoolean(version_compare(PHP_VERSION, '5.3.0'));
+            ->setByBoolean(version_compare(PHP_VERSION, '7.0.0'));
     }
 }
